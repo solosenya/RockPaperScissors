@@ -1,9 +1,9 @@
-package com.example.rockpaperscissors.models.gameModels;
+package com.example.rockpaperscissors.model.gameModels;
 
-import com.example.rockpaperscissors.models.MoveGenerator.MoveGenerator;
-import com.example.rockpaperscissors.models.RPSlogic.RPSComparator;
-import com.example.rockpaperscissors.models.RPSlogic.RPSEnum;
-import com.example.rockpaperscissors.models.RPSlogic.RPSEnumConverter;
+import com.example.rockpaperscissors.service.MoveGeneratorService.MoveGenerator;
+import com.example.rockpaperscissors.service.RPSEnumService.RPSEnumComparator;
+import com.example.rockpaperscissors.service.RPSEnumService.RPSEnum;
+import com.example.rockpaperscissors.service.RPSEnumService.RPSEnumConverter;
 
 import java.util.ArrayList;
 
@@ -45,7 +45,7 @@ public class UpToThreeWinsGameModel {
         result.add("Ваш ход: " + RPSEnumConverter.convertEnumToRusString(usersMove));
         result.add("Ход оппонента: " + RPSEnumConverter.convertEnumToRusString(opponentsMove));
 
-        if (new RPSComparator(usersMove).compareTo(opponentsMove) == 0) {
+        if (new RPSEnumComparator(usersMove).compareTo(opponentsMove) == 0) {
             result.add("Ничья, требуется переигровка!");
             result.add("Количество ваших побед в игре \"до трех\": "
                     + UpToThreeWinsGameModel.getUsersWinsInASingleGame());
@@ -53,7 +53,7 @@ public class UpToThreeWinsGameModel {
                     + UpToThreeWinsGameModel.getOpponentsWinsInASingleGame());
         }
 
-        else if (new RPSComparator(usersMove).compareTo(opponentsMove) > 0) {
+        else if (new RPSEnumComparator(usersMove).compareTo(opponentsMove) > 0) {
             UpToThreeWinsGameModel.incrementUsersWinsInASingleGame();
             if (UpToThreeWinsGameModel.getUsersWinsInASingleGame() == 3) {
                 UpToThreeWinsGameModel.resetResultOfASingleGame();

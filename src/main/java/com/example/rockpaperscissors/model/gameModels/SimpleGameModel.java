@@ -1,9 +1,9 @@
-package com.example.rockpaperscissors.models.gameModels;
+package com.example.rockpaperscissors.model.gameModels;
 
-import com.example.rockpaperscissors.models.MoveGenerator.MoveGenerator;
-import com.example.rockpaperscissors.models.RPSlogic.RPSComparator;
-import com.example.rockpaperscissors.models.RPSlogic.RPSEnum;
-import com.example.rockpaperscissors.models.RPSlogic.RPSEnumConverter;
+import com.example.rockpaperscissors.service.MoveGeneratorService.MoveGenerator;
+import com.example.rockpaperscissors.service.RPSEnumService.RPSEnumComparator;
+import com.example.rockpaperscissors.service.RPSEnumService.RPSEnum;
+import com.example.rockpaperscissors.service.RPSEnumService.RPSEnumConverter;
 
 import java.util.ArrayList;
 
@@ -44,7 +44,7 @@ public class SimpleGameModel {
 
         ArrayList<String> result = new ArrayList<>();
 
-        RPSComparator comparator = new RPSComparator(usersMove);
+        RPSEnumComparator comparator = new RPSEnumComparator(usersMove);
 
         if (comparator.compareTo(opponentsMove) > 0) {
             SimpleGameModel.incrementUsersWins();

@@ -1,7 +1,7 @@
-package com.example.rockpaperscissors.models.statisticsModel;
+package com.example.rockpaperscissors.model.statisticsModel;
 
-import com.example.rockpaperscissors.models.gameModels.SimpleGameModel;
-import com.example.rockpaperscissors.models.gameModels.UpToThreeWinsGameModel;
+import com.example.rockpaperscissors.model.gameModels.SimpleGameModel;
+import com.example.rockpaperscissors.model.gameModels.UpToThreeWinsGameModel;
 
 import java.util.ArrayList;
 

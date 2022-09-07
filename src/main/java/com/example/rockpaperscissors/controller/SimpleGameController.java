@@ -1,8 +1,8 @@
-package com.example.rockpaperscissors.controllers;
+package com.example.rockpaperscissors.controller;
 
-import com.example.rockpaperscissors.models.RPSlogic.RPSEnumConverter;
-import com.example.rockpaperscissors.models.RPSlogic.RPSEnum;
-import com.example.rockpaperscissors.models.gameModels.SimpleGameModel;
+import com.example.rockpaperscissors.service.RPSEnumService.RPSEnumConverter;
+import com.example.rockpaperscissors.service.RPSEnumService.RPSEnum;
+import com.example.rockpaperscissors.model.gameModels.SimpleGameModel;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

@@ -1,12 +1,14 @@
-package com.example.rockpaperscissors.models.RPSlogic;
+package com.example.rockpaperscissors.service.RPSEnumService;
 
+
+import com.example.rockpaperscissors.service.RPSEnumService.RPSEnum;
 
 //Класс, предоставляющий сравнение двух значений перечисления PRSEnum
-public class RPSComparator implements Comparable<RPSEnum> {
+public class RPSEnumComparator implements Comparable<RPSEnum> {
 
     private RPSEnum o;
 
-    public RPSComparator(RPSEnum o) {
+    public RPSEnumComparator(RPSEnum o) {
         this.o = o;
     }
 

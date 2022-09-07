@@ -1,6 +1,6 @@
-package com.example.rockpaperscissors.models.MoveGenerator;
+package com.example.rockpaperscissors.service.MoveGeneratorService;
 
-import com.example.rockpaperscissors.models.RPSlogic.RPSEnum;
+import com.example.rockpaperscissors.service.RPSEnumService.RPSEnum;
 
 import java.util.Random;
 

@@ -1,6 +1,6 @@
-package com.example.rockpaperscissors.controllers;
+package com.example.rockpaperscissors.controller;
 
-import com.example.rockpaperscissors.models.statisticsModel.StatisticsModel;
+import com.example.rockpaperscissors.model.statisticsModel.StatisticsModel;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

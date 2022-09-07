@@ -1,4 +1,6 @@
-package com.example.rockpaperscissors.models.RPSlogic;
+package com.example.rockpaperscissors.service.RPSEnumService;
+
+import com.example.rockpaperscissors.service.RPSEnumService.RPSEnum;
 
 import java.util.Locale;
 
